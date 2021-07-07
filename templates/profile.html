@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+<div class="mt-3 text-success">
+    <marquee behavior="" direction=""><h1>Wellcome {{session['sname']}}</h1></marquee>
+</div>
+<div class="container">
+   <div class="row mt-5">
+      <div class="col-md-8 m-auto">
+             <div class="card">
+                 <div class="card-header bg-primary text-center text-white"><h3>User Information</h3></div>
+                 <div class="card-body">
+                   <h3>your id is {{session['fname'] }}</h3>
+                 </div>
+             </div>
+      </div>
+   </div>
+</div>
+{% endblock %}
